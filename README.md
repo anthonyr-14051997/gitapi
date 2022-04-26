@@ -4,10 +4,8 @@ Recheche d'utilisateur GitHub
 
 ## Présentation
 
-Ce projet la conciste à reproduire une interface de recherche 
-d'utilisateur github, qui recherche les informations grâce à l'api de github.
-A l'aide d'une maquette j'ai réalisé l'intégrations pour ensuite lié l'api github avec l'interface,
-grâce à l'ajax, au php et un peu de css. On croiraît un vrai widget GitHub.
+Ce projet conciste à reproduire une interface de recherche d'utilisateur github, qui recherche les informations grâce à l'api de github.
+A l'aide d'une maquette j'ai réalisé l'intégrations pour ensuite lié l'api github avec l'interface, grâce à l'ajax, au php et un peu de css. On croiraît un vrai widget GitHub.
 
 ## Techno
 
