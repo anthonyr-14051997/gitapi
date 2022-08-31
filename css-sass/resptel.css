@@ -1,0 +1,172 @@
+@media (min-width: 360px) and (max-width: 414px) {
+    body {
+      justify-content: left;
+      width: auto;
+      height: 100vh;
+    }
+    body main {
+      width: 60vh;
+      grid-template-columns: 100%;
+      grid-gap: 15px;
+      margin-left: 1vh;
+    }
+    body main .containtitre .titre {
+      width: 95%;
+    }
+    body main .containtitre .titre .title {
+      font-size: 1.7rem;
+      margin-top: 1vh;
+    }
+    body main .containtitre .titre .dark .lumi {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    body main .containtitre .titre .light .lum {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    body main .containsearch .search {
+      width: 95%;
+      height: 90%;
+    }
+    body main .containsearch .search .loupe {
+      width: 4vh;
+      height: 4vh;
+      margin-left: 1vh;
+      margin-top: 2vh;
+    }
+    body main .containsearch .search .yep {
+      margin-left: 1vh;
+      width: 20vh;
+      font-size: .7rem;
+      
+    }
+    body main .containsearch .search button {
+      height: 6vh;
+      margin-left: -7vh;
+      font-size: 1rem;
+      position: fixed;
+      left: 36%;
+    }
+    body main .containsearch .search .nop {
+        font-size: .7rem;
+      width: 10vh;
+      margin-top: 1.7vh;
+      margin-right: 15vh;
+      color: red;
+
+    }
+    body main .block {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      display: flex;
+      height: 80vh;
+      width: 95%;
+    }
+    body main .block .block1 {
+      position: absolute;
+    }
+    body main .block .block1 .icon {
+      margin-top: 1vh;
+      margin-left: 1vh;
+      height: 13vh;
+      width: 13vh;
+    }
+    body main .block .block2 {
+      width: 100%;
+      margin: 1vh;
+    }
+    body main .block .block2 .block3 .titre2 .name {
+      position: absolute;
+      margin-top: 2vh;
+      margin-left: 18vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body main .block .block2 .block3 .titre2 .name .pseudo {
+      font-size: 1.3rem;
+    }
+    body main .block .block2 .block3 .titre2 .name .apseudo {
+      margin-top: -2vh;
+      margin-left: 0.5vh;
+      font-size: 1rem;
+    }
+    body main .block .block2 .block3 .titre2 .bio {
+      position: absolute;
+      margin-top: 20vh;
+      margin-left: 2vh;
+      width: 90%;
+      font-size: 1rem;
+    }
+    body main .block .block2 .block3 .date {
+      position: absolute;
+      margin-top: 15vh;
+      margin-left: 18vh;
+      width: 80vh;
+      font-size: 0.7rem;
+    }
+    body main .block .block2 .blockbis {
+      position: absolute;
+      margin-top: 28vh;
+      margin-left: 0.5vh;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+    }
+    body main .block .block2 .blockbis .infosgit {
+      width: 90%;
+      height: 15vh;
+      align-items: center;
+      margin-top: 1.5vh;
+    }
+    body main .block .block2 .blockbis .infosgit .reposal .repository, body main .block .block2 
+        .blockbis .infosgit .reposal .wers, body main .block .block2 .blockbis .infosgit .reposal 
+        .wing, body main .block .block2 .blockbis .infosgit .wersal .repository, body main .block 
+        .block2 .blockbis .infosgit .wersal .wers, body main .block .block2 .blockbis .infosgit 
+        .wersal .wing, body main .block .block2 .blockbis .infosgit .wingal .repository, body main 
+        .block .block2 .blockbis .infosgit .wingal .wers, body main .block .block2 .blockbis .infosgit .wingal .wing {
+      margin-bottom: 2vh;
+      font-size: 1rem;
+    }
+    body main .block .block2 .blockbis .infosgit .reposal .reposnb, body main .block .block2 
+        .blockbis .infosgit .reposal .wersnb, body main .block .block2 .blockbis .infosgit 
+        .reposal .wingnb, body main .block .block2 .blockbis .infosgit .wersal .reposnb, body main 
+        .block .block2 .blockbis .infosgit .wersal .wersnb, body main .block .block2 .blockbis .infosgit 
+        .wersal .wingnb, body main .block .block2 .blockbis .infosgit .wingal .reposnb, body main .block 
+        .block2 .blockbis .infosgit .wingal .wersnb, body main .block .block2 .blockbis .infosgit .wingal .wingnb {
+      font-size: 1rem;
+    }
+    body main .block .block2 .blockbis .reseau {
+      width: 53vh;
+      height: 13vh;
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0vh;
+      margin-left: 0vh;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 .agith {
+        margin-left: 0vh;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 .tweete {
+        margin-left: 0vh;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 .posit .position, body main .block .block2 
+        .blockbis .reseau .reseau1 .posit .lien, body main .block .block2 .blockbis .reseau .reseau1 
+        .posit .tweet, body main .block .block2 .blockbis .reseau .reseau1 .posit .agit, body main .block 
+        .block2 .blockbis .reseau .reseau1 .linke .position, body main .block .block2 .blockbis .reseau 
+        .reseau1 .linke .lien, body main .block .block2 .blockbis .reseau .reseau1 .linke .tweet, body main 
+        .block .block2 .blockbis .reseau .reseau1 .linke .agit, body main .block .block2 .blockbis .reseau 
+        .reseau1 .tweete .position, body main .block .block2 .blockbis .reseau .reseau1 .tweete .lien, body main 
+        .block .block2 .blockbis .reseau .reseau1 .tweete .tweet, body main .block .block2 .blockbis .reseau 
+        .reseau1 .tweete .agit, body main .block .block2 .blockbis .reseau .reseau1 .agith .position, body main 
+        .block .block2 .blockbis .reseau .reseau1 .agith .lien, body main .block .block2 .blockbis .reseau .reseau1 
+        .agith .tweet, body main .block .block2 .blockbis .reseau .reseau1 .agith .agit {
+      font-size: 1rem;
+    }
+    body main .nop {
+      width: 100%;
+    }
+  }

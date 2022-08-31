@@ -1,0 +1,181 @@
+@media (min-width: 768px) and (max-width: 912px) {
+    body {
+      justify-content: left;
+      margin: 0vh;
+      height: 90vh;
+    }
+    body main {
+      width: 50vh;
+      grid-template-columns: 100%;
+      grid-gap: 15px;
+      margin: 3vh;
+    }
+    body main .containtitre .titre {
+      margin-top: 8vh;
+      width: 95%;
+    }
+    body main .containtitre .titre .title {
+      font-size: 2rem;
+      margin-top: 1vh;
+    }
+    body main .containtitre .titre .dark .lumi {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    body main .containtitre .titre .light .lum {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    body main .containsearch .search {
+      margin-top: 5vh;
+      width: 95%;
+      height: 50%;
+    }
+    body main .containsearch .search .yep {
+      margin-left: 1vh;
+      width: 60%;
+    }
+    body main .containsearch .search .yep::placeholder {
+      font-size: 1rem;
+    }
+    body main .containsearch .search .loupe {
+      width: 3vh;
+      height: 3vh;
+      margin-top: .7vh;
+      margin-left: 1vh;
+    }
+    body main .containsearch .search button {
+      width: 20%;
+      height: 80%;
+      margin: 0.5vh 1vh 0vh 0vh;
+      font-size: 1rem;
+    }
+    body main .containsearch .search .nop {
+      position: relative;
+      margin-right: 3vh;
+      margin-top: .2vh;
+      width: 10%;
+      font-size: 1rem;
+        color: red;
+    }
+    body main .block {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      display: flex;
+      height: 50vh;
+      width: 95%;
+      margin: 0vh;
+    }
+    body main .block .block1 {
+      position: absolute;
+      margin: 0vh;
+    }
+    body main .block .block1 .icon {
+      margin-top: 4vh;
+      margin-left: 2vh;
+      height: 10vh;
+      width: 10vh;
+    }
+    body main .block .block2 {
+      width: 95%;
+      margin: 1vh;
+    }
+    body main .block .block2 .block3 .titre2 .name {
+      position: absolute;
+      margin-top: 1vh;
+      margin-left: 15vh;
+      margin-bottom: 0vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    body main .block .block2 .block3 .titre2 .name .pseudo {
+      margin-bottom: -1.5vh;
+      margin-top: 0vh;
+      font-size: 1.5rem;
+    }
+    body main .block .block2 .block3 .titre2 .name .apseudo {
+      margin-top: 0vh;
+      margin-left: 0.5vh;
+      font-size: 1rem;
+    }
+    body main .block .block2 .block3 .titre2 .bio {
+      position: absolute;
+      margin-top: 15vh;
+      margin-left: 2vh;
+      width: 90vw;
+      font-size: 1.1rem;
+    }
+    body main .block .block2 .block3 .date {
+      position: absolute;
+      margin-top: 10vh;
+      margin-left: 15vh;
+      width: 80vh;
+      font-size: 1rem;
+    }
+    body main .block .block2 .blockbis {
+      position: absolute;
+      margin-top: 18vh;
+      margin-left: 1vh;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+    body main .block .block2 .blockbis .infosgit {
+      width: 95%;
+      height: 8vh;
+      align-items: center;
+    }
+    body main .block .block2 .blockbis .infosgit .reposal .repository, 
+        body main .block .block2 .blockbis .infosgit .reposal .wers, body main 
+        .block .block2 .blockbis .infosgit .reposal .wing, body main .block .block2 
+        .blockbis .infosgit .wersal .repository, body main .block .block2 .blockbis .infosgit 
+        .wersal .wers, body main .block .block2 .blockbis .infosgit .wersal .wing, body main .block 
+        .block2 .blockbis .infosgit .wingal .repository, body main .block .block2 .blockbis .infosgit 
+        .wingal .wers, body main .block .block2 .blockbis .infosgit .wingal .wing {
+      margin-bottom: 2vh;
+      font-size: .9rem;
+    }
+    body main .block .block2 .blockbis .infosgit .reposal .reposnb, 
+        body main .block .block2 .blockbis .infosgit .reposal .wers, body main 
+        .block .block2 .blockbis .infosgit .reposal .wingnb, body main .block .block2 
+        .blockbis .infosgit .wersal .reposnb, body main .block .block2 .blockbis .infosgit 
+        .wersal .wersnb, body main .block .block2 .blockbis .infosgit .wersal .wing, body main .block 
+        .block2 .blockbis .infosgit .wingal .repository, body main .block .block2 .blockbis .infosgit 
+        .wingal .wersnb, body main .block .block2 .blockbis .infosgit .wingal .wingnb {
+            font-size: .9rem;
+    }
+    body main .block .block2 .blockbis .reseau {
+      width: 95%;
+      height: 13vh;
+      margin-top: 0vh;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 {
+        width: 100%;
+        margin-right: 0vh;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 .agith {
+        margin-left: 1vh;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 .tweete {
+        margin-left: 1vh;
+        width: 100%;
+    }
+    body main .block .block2 .blockbis .reseau .reseau1 .posit .position, body main 
+        .block .block2 .blockbis .reseau .reseau1 .posit .lien, body main .block 
+        .block2 .blockbis .reseau .reseau1 .posit .tweet, body main .block .block2 
+        .blockbis .reseau .reseau1 .posit .agit, body main .block .block2 .blockbis 
+        .reseau .reseau1 .linke .position, body main .block .block2 .blockbis .reseau 
+        .reseau1 .linke .lien, body main .block .block2 .blockbis .reseau .reseau1 .linke 
+        .tweet, body main .block .block2 .blockbis .reseau .reseau1 .linke .agit, body main 
+        .block .block2 .blockbis .reseau .reseau1 .tweete .position, body main .block .block2 
+        .blockbis .reseau .reseau1 .tweete .lien, body main .block .block2 .blockbis .reseau 
+        .reseau1 .tweete .tweet, body main .block .block2 .blockbis .reseau .reseau1 .tweete 
+        .agit, body main .block .block2 .blockbis .reseau .reseau1 .agith .position, body main 
+        .block .block2 .blockbis .reseau .reseau1 .agith .lien, body main .block .block2 .blockbis 
+        .reseau .reseau1 .agith .tweet, body main .block .block2 .blockbis .reseau .reseau1 .agith .agit {
+      font-size: 1rem;
+    }
+  }

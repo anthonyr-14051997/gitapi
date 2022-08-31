@@ -1,0 +1,842 @@
+
+
+body{
+    background: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+
+    main{
+        position: relative;
+        width: 50vw;
+        height: 130vh;
+        background: #F6F8FF;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 10% 45%;
+        grid-gap: 10px;
+        grid-template-areas: "titre" "search" "blockk" ;
+
+        .containtitre{
+            
+            .titre{
+                grid-area: titre;
+                width: 100%;
+                height: 38px;
+                display: flex;
+                justify-content: space-between;
+                
+                .title{
+                    height: 39px;
+                    font-family:'Space Mono', monospace;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    line-height: 39px;
+                    /* identical to box height */
+                    color: #222731;
+                }
+                .dark {
+                    display: none;
+                    align-items: center;
+                    margin-top: 2vh;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        path {
+                            fill: #222731;
+                        }
+                        .lumi{
+                            color: #222731;
+                        }
+                    }
+                    .lune {
+                        margin-left: 1vh;
+                    }
+                    svg {
+                        path {
+                            fill: #697C9A;
+                        }
+                    }
+                    .lumi{
+                        height: 19px;
+                        font-family:'Space Mono', monospace;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 19px;
+                        text-align: right;
+                        letter-spacing: 2.5px;
+                        color: #697C9A;
+                    }
+                }
+                .light{
+                    display: none;
+                    align-items: center;
+                    margin-top: 2vh;
+
+                    &:hover {
+                        cursor: pointer;
+                        .lum{
+                            color: #90A4D4;
+                        }
+                        path {
+                            fill: #90A4D4;
+                        }
+                    }
+
+                    .sun {
+                        margin-left: 1vh;
+                    }
+
+                    .lum{
+                        height: 19px;
+                        font-family:'Space Mono', monospace;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 19px;
+                        text-align: right;
+                        letter-spacing: 2.5px;
+                        color: #ffffff;
+                    }
+                    svg {
+                        path {
+                            fill: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .off {
+            font-family:'Space Mono', monospace;
+            color: red;
+            text-align: center;
+
+        }
+        
+        .containsearch{
+            .search{
+                grid-area: search;
+                display: flex;
+                width: 100%;
+                height: 60%;
+                background: #FEFEFE;
+                box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+                border-radius: 15px;
+                
+                .loupe{
+                    width: 5vh;
+                    height: 5vh;
+                    margin-top: 1vh;
+                    margin-left: 1vh;
+                }
+
+                .yep{
+                    height: 90%;
+                    width: 40vh;
+                    border-style: none;
+                    outline: none;
+                    caret-color: rgb(5, 142, 255);
+                    margin-left: 2vh;
+
+                    font-family:'Space Mono', monospace;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height, or 139% */
+                    color: #222731;
+                    background-color: transparent;
+
+                    &::placeholder {
+                        opacity: 0.75;
+                    }
+                }
+                .yep2::placeholder {
+                    color: #ffffff;
+                }
+                .yep3::placeholder {
+                    color: #4B6A9B;
+                }
+                .nop {
+                    height: 80%;
+                    width: 30vh;
+                    font-size: 1.8rem;
+                    border-style:none;
+                    margin-top: 1.5vh;
+                    margin-right: 1vh;
+                    cursor: default;
+                    outline:none;
+                    background-color: transparent;
+                    text-align: center;
+                    font-family:'Space Mono', monospace;
+                    color: red;
+                }
+
+                button{
+                    margin: 1vh 1vh 1vh 0vh;
+                    width: 13vh;
+                    height: 70%;
+                    float: right;
+                    background: #0079FF;
+                    border-radius: 10px;
+                    -webkit-appearance: none;
+                    border-style: none;
+
+                    font-family:'Space Mono', monospace;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height */
+                    color: #FFFFFF;
+
+                    &:hover {
+                        cursor: url("./img/main.svg"), pointer;
+                    background: #60ABFF;
+                    }
+                    
+                }
+            }
+        }
+
+        .block{
+            height: 100%;
+            
+            display: grid;
+            grid-area: blockk;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "block1" "block2";
+            background: #FEFEFE;
+            box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+            border-radius: 15px;
+            display: flex;
+                
+            }
+            .block2{
+                grid-area: block2;
+                width: 100%;
+                height: 95%;
+                display: flex;
+                flex-direction: column;
+                margin: 2vh;
+
+                .block3{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 3vh;
+                    
+
+                    .titre2{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        margin-top: 2vh;
+
+                        .imgtitre {
+                            display: flex;
+                            flex-direction: row;
+                            margin-left: 5%;
+
+                            .icon{
+                                width: 13vh;
+                                height: 13vh;
+                                border-radius: 50%;
+                            }
+                            .name{
+                                margin-left: 7%;
+
+                                .pseudo{
+                                    font-family:'Space Mono', monospace;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 2em;
+                                    /* identical to box height */
+                                    color: #2B3442;
+                                    
+                                }
+        
+                                .apseudo{
+                                    font-family:'Space Mono', monospace;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 1.2em;
+                                    margin-left: 2%;
+                                    /* identical to box height */
+                                    color: #0079FF;
+                                }
+                            }
+                        }
+
+                        .bio{
+                            font-family:'Space Mono', monospace;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1.5em;
+                            /* identical to box height, or 167% */
+                            color: #4B6A9B;
+                            mix-blend-mode: normal;
+                            opacity: 0.75;
+                            margin-top: 1vh;
+                            margin-left: 50%;
+                            width: 100%;
+                        }
+
+                    }
+
+                    .date{
+                        grid-area: droite;
+                        font-family:'Space Mono', monospace;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 1em;
+                        color: #697C9A;
+                        margin-top: 3vh;
+                    }
+
+                }
+                .blockbis{
+                    margin-right: 3vh;
+                    margin-left: 20%;
+                    
+        
+                    .infosgit{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: space-around;
+                        background: #F6F8FF;
+                        border-radius: 10px;
+                        align-items: center;
+                        margin-top: 5vh;
+                        font-size: 1.3em;
+        
+                        div {
+                            display: flex;
+                            flex-direction: column;
+
+                            .repository{
+                                height: 19px;
+                                font-family:'Space Mono', monospace;
+                                font-style: normal;
+                                font-weight: normal;
+                                
+                                line-height: 19px;
+                                color: #4B6A9B;
+                            }
+
+                            .reposnb{
+                                height: 33px;
+                                font-family:'Space Mono', monospace;
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: 33px;
+                                /* identical to box height */
+                                text-transform: uppercase;
+                                color: #2B3442;
+                            }
+
+                            .wers{
+                                height: 19px;
+                                font-family:'Space Mono', monospace;
+                                font-style: normal;
+                                font-weight: normal;
+                                line-height: 19px;
+                                color: #4B6A9B;
+                            }
+
+                            .wersnb{
+                                height: 33px;
+                                font-family:'Space Mono', monospace;
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: 33px;
+                                /* identical to box height */
+                                text-transform: uppercase;
+                                color: #2B3442;
+                            }
+
+                            .wing{
+                                height: 19px;
+                                font-family:'Space Mono', monospace;
+                                font-style: normal;
+                                font-weight: normal;
+                                color: #4B6A9B;
+                            }
+
+                            .wingnb{
+                                height: 33px;
+                                font-family:'Space Mono', monospace;
+                                font-style: normal;
+                                font-weight: bold;
+                                /* identical to box height */
+                                text-transform: uppercase;
+                                color: #2B3442;
+                            }
+                        }
+                    }
+                    .reseau{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 2vh;
+                        font-size: 1em;
+
+                        .reseau1{
+                            margin-top: 2vh;
+                            margin-right: 5vh;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            .posit{
+                                .position{
+                                    height: 22px;
+                                    font-family:'Space Mono', monospace;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    line-height: 22px;
+                                    color: #4B6A9B;
+                                }
+                                .position:hover {
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
+                                .imgposi{
+                                    width: 19.99px;
+                                    height: 19.85px;
+                                }
+                            }
+                            .linke{
+                                .lien{
+                                    height: 22px;
+                                    font-family:'Space Mono', monospace;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    
+                                    line-height: 22px;
+                                    color: #4B6A9B;
+                                }
+
+                                .lien:hover{
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
+
+                                .imglink{
+                                    width: 19.99px;
+                                    height: 19.94px;
+                                }
+                            }
+                            .tweete{
+                                opacity: 0.5;
+                                margin-left: -20vh;
+
+                                .tweet{
+                                    height: 22px;
+                                    font-family:'Space Mono', monospace;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    
+                                    line-height: 22px;
+                                    color: #4B6A9B;
+                                }
+                                .tweet:hover {
+                                    text-decoration: underline;
+                                    cursor: url("./img/main.svg"), pointer;
+                                }
+
+                                .tweete{
+                                    mix-blend-mode: normal;
+                                    opacity: 0.5;
+                                }
+                                .imgtweet{
+                                    width: 20px;
+                                    height: 19.85px;
+                                }
+                            }
+                            .agith{
+                                margin-left: -20vh;
+                                .agit{
+                                    height: 22px;
+                                    font-family:'Space Mono', monospace;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    
+                                    line-height: 22px;
+                                    color: #4B6A9B;
+                                }
+                                .agit:hover{
+                                    text-decoration: underline;
+                                    cursor: url("./img/main.svg"), pointer;
+                                }
+
+                                .imgagit{
+                                    width: 20px;
+                                    height: 19.85px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+/* @media (prefers-color-scheme: dark) {
+
+}
+
+@media (prefers-color-scheme: light) {
+    
+} */
+
+/* @media (min-width: 768px) and (max-width: 912px) {
+    body {
+        justify-content: left;
+        margin: 0vh;
+        main {
+            width: 65vh;
+            grid-template-columns: 100%;
+            grid-gap: 15px;
+            margin: 5vh;
+
+            .containtitre {
+                .titre {
+                    margin-top: 8vh;
+                    width: 95%;
+                    .title {
+                        font-size: 2rem;
+                        margin-top: 1vh;
+                    }
+                    .dark {
+                        .lumi {
+                            font-size: 1.5rem;
+                            margin-top: 0;
+                        }
+                    }
+                    .light {
+                        .lum{
+                            font-size: 1.5rem;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .containsearch {
+                .search{
+                    margin-top: 5vh;
+                    width: 95%;
+                    height: 50%;
+
+                    .yep {
+                        margin: 0vh;
+                        width: 60%;
+                    }
+                    .yep::placeholder {
+                        font-size: 1.5rem;
+                    }
+                    .loupe {
+                        width: 3vh;
+                        height: 3vh;
+                        margin-top: 1vh;
+                        margin-left: 1vh;
+                    }
+                    button {
+                        width: 20%;
+                        height: 80%;
+                        margin: .5vh 1vh 0vh 0vh;
+                        font-size: 1rem;
+                    }
+                    .nop {
+                        position: relative;
+                        margin: 0vh;
+                        width: 10%;
+                    }
+                }
+            }
+
+            .block{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                display: flex;
+                height: 50vh;
+                width: 95%;
+                margin: 0vh;
+
+                .block1 {
+                    position: absolute;
+                    margin: 0vh;
+                    .icon {
+                        margin-top: 4vh;
+                        margin-left: 2vh;
+                        height: 10vh;
+                        width: 10vh;
+
+                    }
+                }
+                .block2 {
+                    width: 95%;
+                    margin: 1vh;
+
+                    .block3{
+                        .titre2{
+                            .name{
+                                position: absolute;
+                                margin-top: 1vh;
+                                margin-left: 15vh;
+                                margin-bottom: 0vh;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .pseudo {
+                                    margin-bottom: -1.5vh;
+                                    margin-top: 0vh;
+                                    font-size: 2rem;
+                                }
+                                .apseudo {
+                                    margin-top: 1vh;
+                                    margin-left: .5vh;
+                                    font-size: 1.5rem;
+                                }
+                            }
+                            .bio{
+                                position: absolute;
+                                margin-top: 15vh;
+                                margin-left: 2vh;
+                                width: 90vw;
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .date{
+                            position: absolute;
+                            margin-top: 10vh;
+                            margin-left: 15vh;
+                            width: 80vh;
+                            font-size: 1.7rem;
+                        }
+                    }
+                    .blockbis {
+                        position: absolute;
+                        margin-top: 18vh;
+                        margin-left: 1vh;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .infosgit {
+                            width: 95%;
+                            height: 10vh;
+                            align-items: center;
+                            
+                            .reposal, .wersal, .wingal {
+                                .repository, .wers, .wing {
+                                    margin-bottom: 2vh;
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .reseau {
+                            width: 90%;
+                            height: 13vh;
+                            margin-top: 0vh;
+
+                            .reseau1 {
+                                .posit, .linke, .tweete, .agith{
+                                    .position, .lien, .tweet, .agit {
+                                        
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+@media (min-width: 360px) and (max-width: 414px) {
+    body {
+        justify-content: left;
+        width: auto;
+        
+        main {
+            width: 55vh;
+            grid-template-columns: 100%;
+            grid-gap: 15px;
+            margin: .5vh;
+
+            .containtitre {
+                .titre {
+                    width: 95%;
+                    .title {
+                        font-size: 1.7rem;
+                        margin-top: 1vh;
+                    }
+                    .dark {
+                        .lumi {
+                            font-size: 1rem;
+                            margin-top: 0;
+                        }
+                    }
+                    .light {
+                        .lum{
+                            font-size: 1rem;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            .containsearch {
+                
+                .search{
+                    width: 95%;
+                    height: 90%;
+                    .loupe {
+                        width: 4vh;
+                        height: 4vh;
+                        margin-left: 1vh;
+                        margin-top: 2vh;
+                    }
+                    .yep {
+                        margin-left: 0vh;
+                        width: 20vh;
+                        font-size: .8rem;
+                    }
+                    button {
+                        height: 6vh;
+                        margin: 0.5;
+                        font-size: 1rem;
+                    }
+                    .nop {
+                        width: 1vh;
+                    }
+                }
+            }
+
+            .block{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                display: flex;
+                height: 90vh;
+                width: 95%;
+
+                .block1 {
+                    position: absolute;
+                    
+                    .icon {
+                        margin-top: 1vh;
+                        margin-left: 1vh;
+                        height: 10vh;
+                        width: 10vh;
+
+                    }
+                }
+                .block2 {
+                    width: 100%;
+                    margin: 1vh;
+
+                    .block3{
+                        .titre2{
+                            .name{
+                                position: absolute;
+                                margin-top: 2vh;
+                                margin-left: 20vh;
+                                
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .pseudo {
+                                    
+                                    font-size: 1.3rem;
+                                }
+                                .apseudo {
+                                    margin-top: -3vh;
+                                    margin-left: .5vh;
+                                    font-size: 1rem;
+                                }
+                            }
+                            .bio{
+                                position: absolute;
+                                margin-top: 20vh;
+                                margin-left: 2vh;
+                                
+                                width: 90%;
+                                font-size: 1.3rem;
+                            }
+                        }
+                        .date{
+                            position: absolute;
+                            margin-top: 15vh;
+                            margin-left: 20vh;
+                            width: 80vh;
+                            font-size: .7rem;
+                        }
+                    }
+                    .blockbis {
+                        position: absolute;
+                        margin-top: 30vh;
+                        margin-left: .5vh;
+                        width: 95%;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .infosgit {
+                            width: 90%;
+                            height: 15vh;
+                            align-items: center;
+                            
+                            .reposal, .wersal, .wingal {
+                                .repository, .wers, .wing {
+                                    margin-bottom: 2vh;
+                                    font-size: 1rem;
+                                }
+                                .reposnb, .wersnb, .wingnb {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .reseau {
+                            width: 53vh;
+                            height: 13vh;
+                            margin-top: 3vh;
+                            display: flex;
+                            flex-direction: column;
+
+                            .reseau1 {
+                                .posit, .linke, .tweete, .agith{
+                                    
+                                    .position, .lien, .tweet, .agit {
+                                        
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nop {
+                width: 100%;
+            }
+        }
+    }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+/* font-family: 'Space Mono', monospace; */
+

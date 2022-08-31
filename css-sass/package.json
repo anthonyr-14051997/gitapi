@@ -1,0 +1,11 @@
+{
+  "name": "sass-nodejs",
+  "version": "1.0.0",
+  "description": "package pour le sass",
+  "main": "./js/script.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
